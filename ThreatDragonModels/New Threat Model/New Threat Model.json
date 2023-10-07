@@ -16,7 +16,669 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.0.8",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 320,
+              "y": 20
+            },
+            "size": {
+              "width": 110,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Felhasználó\n(Böngésző)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "e55561d3-af32-4fd4-b633-93bd2faa58da",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Felhasználó\n(Böngésző)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 20
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Adminisztrátor\n(Böngésző)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "0f7f6e06-70b7-4c55-9e7e-82fe9d923599",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Adminisztrátor\n(Böngésző)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 495.25,
+              "y": 160
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Backend"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Backend",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 380,
+              "y": 290
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Parser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "f09d94d2-d012-4b29-9e76-529bcdf67e06",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Parser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 555.25,
+              "y": 290
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Adatbázis"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "ab758459-fa20-4b77-a412-ed40c75893b9",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Store",
+              "name": "Adatbázis",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Http válasz",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d69935c8-d6c7-4e08-83ca-81e5801bbc27",
+            "source": {
+              "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
+            },
+            "target": {
+              "x": 420,
+              "y": 80
+            },
+            "vertices": [
+              {
+                "x": 500,
+                "y": 140
+              }
+            ],
+            "labels": [
+              "Http válasz"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Http kérés",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "2c82126d-9626-4a5f-b355-c432c2ce2441",
+            "source": {
+              "cell": "0f7f6e06-70b7-4c55-9e7e-82fe9d923599"
+            },
+            "target": {
+              "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 100
+              }
+            ],
+            "labels": [
+              "Http kérés"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Http válasz",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "23ac6304-0b2a-4e85-8cf1-160c29aeab6a",
+            "source": {
+              "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
+            },
+            "target": {
+              "cell": "0f7f6e06-70b7-4c55-9e7e-82fe9d923599"
+            },
+            "vertices": [
+              {
+                "x": 640.25,
+                "y": 130
+              }
+            ],
+            "labels": [
+              "Http válasz"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Adatkérés",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "06b41cdf-b19f-41a3-82ac-c2409764640a",
+            "source": {
+              "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
+            },
+            "target": {
+              "cell": "f09d94d2-d012-4b29-9e76-529bcdf67e06"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 290
+              },
+              {
+                "x": 450,
+                "y": 290
+              }
+            ],
+            "labels": [
+              "Adatkérés"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Válasz",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "79f915ec-5867-4bac-8378-19af28cf52ac",
+            "source": {
+              "cell": "f09d94d2-d012-4b29-9e76-529bcdf67e06"
+            },
+            "target": {
+              "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
+            },
+            "vertices": [
+              {
+                "x": 418.25,
+                "y": 240
+              }
+            ],
+            "labels": [
+              "Válasz"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Olvasás",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "e9059d5c-1569-4274-a1aa-1a82d8430b36",
+            "source": {
+              "cell": "ab758459-fa20-4b77-a412-ed40c75893b9"
+            },
+            "target": {
+              "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
+            },
+            "vertices": [
+              {
+                "x": 615.25,
+                "y": 230
+              }
+            ],
+            "labels": [
+              "Olvasás"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Írás",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "7b585587-b6ae-4ed9-89ea-97a62dbcfaf8",
+            "source": {
+              "x": 560,
+              "y": 200
+            },
+            "target": {
+              "cell": "ab758459-fa20-4b77-a412-ed40c75893b9"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 250
+              },
+              {
+                "x": 590,
+                "y": 250
+              }
+            ],
+            "labels": [
+              "Írás"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Http kérés",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "56b05267-cd4a-4997-a87d-e767112f5e84",
+            "source": {
+              "cell": "e55561d3-af32-4fd4-b633-93bd2faa58da"
+            },
+            "target": {
+              "x": 490,
+              "y": 190
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 140
+              }
+            ],
+            "labels": [
+              "Http kérés"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Adatbázis-elérés",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "c7e98cb1-f357-4c69-8a9c-878efb997291",
+            "source": {
+              "x": 550,
+              "y": 270
+            },
+            "target": {
+              "x": 910,
+              "y": 230
+            },
+            "labels": [
+              "Adatbázis-elérés"
+            ],
+            "vertices": [
+              {
+                "x": 820,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Interenet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "a8518e74-9392-4ecc-89c4-2721ac516f78",
+            "source": {
+              "x": 320,
+              "y": 180
+            },
+            "target": {
+              "x": 1130,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 160
+              },
+              {
+                "x": 530,
+                "y": 130
+              },
+              {
+                "x": 570,
+                "y": 160
+              },
+              {
+                "x": 680,
+                "y": 180
+              }
+            ],
+            "labels": [
+              "Interenet"
+            ]
+          }
+        ]
       }
     ],
     "diagramTop": 1,
