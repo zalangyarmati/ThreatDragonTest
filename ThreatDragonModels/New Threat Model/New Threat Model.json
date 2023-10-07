@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "e55561d3-af32-4fd4-b633-93bd2faa58da",
             "zIndex": 1,
+            "id": "e55561d3-af32-4fd4-b633-93bd2faa58da",
             "data": {
               "type": "tm.Actor",
               "name": "Felhasználó\n(Böngésző)",
@@ -72,8 +72,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "0f7f6e06-70b7-4c55-9e7e-82fe9d923599",
             "zIndex": 2,
+            "id": "0f7f6e06-70b7-4c55-9e7e-82fe9d923599",
             "data": {
               "type": "tm.Actor",
               "name": "Adminisztrátor\n(Böngésző)",
@@ -106,8 +106,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79",
             "zIndex": 3,
+            "id": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79",
             "data": {
               "type": "tm.Process",
               "name": "Backend",
@@ -140,8 +140,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "f09d94d2-d012-4b29-9e76-529bcdf67e06",
             "zIndex": 4,
+            "id": "f09d94d2-d012-4b29-9e76-529bcdf67e06",
             "data": {
               "type": "tm.Process",
               "name": "Parser",
@@ -177,8 +177,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "ab758459-fa20-4b77-a412-ed40c75893b9",
             "zIndex": 5,
+            "id": "ab758459-fa20-4b77-a412-ed40c75893b9",
             "data": {
               "type": "tm.Store",
               "name": "Adatbázis",
@@ -225,6 +225,9 @@
               "threats": []
             },
             "id": "d69935c8-d6c7-4e08-83ca-81e5801bbc27",
+            "labels": [
+              "Http válasz"
+            ],
             "source": {
               "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
             },
@@ -237,9 +240,6 @@
                 "x": 500,
                 "y": 140
               }
-            ],
-            "labels": [
-              "Http válasz"
             ]
           },
           {
@@ -274,6 +274,9 @@
               "threats": []
             },
             "id": "2c82126d-9626-4a5f-b355-c432c2ce2441",
+            "labels": [
+              "Http kérés"
+            ],
             "source": {
               "cell": "0f7f6e06-70b7-4c55-9e7e-82fe9d923599"
             },
@@ -285,9 +288,6 @@
                 "x": 580,
                 "y": 100
               }
-            ],
-            "labels": [
-              "Http kérés"
             ]
           },
           {
@@ -322,6 +322,9 @@
               "threats": []
             },
             "id": "23ac6304-0b2a-4e85-8cf1-160c29aeab6a",
+            "labels": [
+              "Http válasz"
+            ],
             "source": {
               "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
             },
@@ -333,9 +336,6 @@
                 "x": 640.25,
                 "y": 130
               }
-            ],
-            "labels": [
-              "Http válasz"
             ]
           },
           {
@@ -370,6 +370,9 @@
               "threats": []
             },
             "id": "06b41cdf-b19f-41a3-82ac-c2409764640a",
+            "labels": [
+              "Adatkérés"
+            ],
             "source": {
               "cell": "eabd4d5c-7d15-47e9-9ae1-cc92b684dc79"
             },
@@ -385,9 +388,6 @@
                 "x": 450,
                 "y": 290
               }
-            ],
-            "labels": [
-              "Adatkérés"
             ]
           },
           {
@@ -422,6 +422,9 @@
               "threats": []
             },
             "id": "79f915ec-5867-4bac-8378-19af28cf52ac",
+            "labels": [
+              "Válasz"
+            ],
             "source": {
               "cell": "f09d94d2-d012-4b29-9e76-529bcdf67e06"
             },
@@ -433,9 +436,6 @@
                 "x": 418.25,
                 "y": 240
               }
-            ],
-            "labels": [
-              "Válasz"
             ]
           },
           {
@@ -470,6 +470,9 @@
               "threats": []
             },
             "id": "e9059d5c-1569-4274-a1aa-1a82d8430b36",
+            "labels": [
+              "Olvasás"
+            ],
             "source": {
               "cell": "ab758459-fa20-4b77-a412-ed40c75893b9"
             },
@@ -481,9 +484,6 @@
                 "x": 615.25,
                 "y": 230
               }
-            ],
-            "labels": [
-              "Olvasás"
             ]
           },
           {
@@ -518,6 +518,9 @@
               "threats": []
             },
             "id": "7b585587-b6ae-4ed9-89ea-97a62dbcfaf8",
+            "labels": [
+              "Írás"
+            ],
             "source": {
               "x": 560,
               "y": 200
@@ -534,9 +537,6 @@
                 "x": 590,
                 "y": 250
               }
-            ],
-            "labels": [
-              "Írás"
             ]
           },
           {
@@ -571,6 +571,9 @@
               "threats": []
             },
             "id": "56b05267-cd4a-4997-a87d-e767112f5e84",
+            "labels": [
+              "Http kérés"
+            ],
             "source": {
               "cell": "e55561d3-af32-4fd4-b633-93bd2faa58da"
             },
@@ -583,9 +586,6 @@
                 "x": 400,
                 "y": 140
               }
-            ],
-            "labels": [
-              "Http kérés"
             ]
           },
           {
@@ -609,6 +609,9 @@
               "hasOpenThreats": false
             },
             "id": "c7e98cb1-f357-4c69-8a9c-878efb997291",
+            "labels": [
+              "Adatbázis-elérés"
+            ],
             "source": {
               "x": 550,
               "y": 270
@@ -617,9 +620,6 @@
               "x": 910,
               "y": 230
             },
-            "labels": [
-              "Adatbázis-elérés"
-            ],
             "vertices": [
               {
                 "x": 820,
@@ -648,6 +648,9 @@
               "hasOpenThreats": false
             },
             "id": "a8518e74-9392-4ecc-89c4-2721ac516f78",
+            "labels": [
+              "Interenet"
+            ],
             "source": {
               "x": 320,
               "y": 180
@@ -673,9 +676,6 @@
                 "x": 680,
                 "y": 180
               }
-            ],
-            "labels": [
-              "Interenet"
             ]
           }
         ]
